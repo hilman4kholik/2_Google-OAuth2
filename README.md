@@ -1,4 +1,4 @@
-#Membuat login google dengan OAuth2 di golang
+# Membuat login google dengan OAuth2 di golang
 1.	Membuat akun google cloud di https://console.developers.google.com.
 2.	Pilih menu APIs & Services.
 3.	Buat dulu projectnya.
