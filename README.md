@@ -6,15 +6,13 @@
 5.	Lalu pergi ke menu credentials -> Create Credentials -> OAtuh Client ID -> pilih jenis aplikasi yang akan digunakan.
 6.	Bagian Authorized redirect URLs isikan http//localhost:8080/callback untuk test.
 7.	Lalu Create.
-8.	Akan muncul tampilan seperti ini
-9.	Lalu buat folder project dan setting dengan git init.
-mkdir 2_google-oauth2
-git init
-go mod init 2_google-oauth2
-go get golang.org/x/oauth2
-go get golang.org/x/oatuh2/google
-10.	Buat file main.go
-dengan isi seperti ini:
+8.	Lalu buat folder project:
+	- mkdir 2_google-oauth2
+	- git init
+	- go mod init 2_google-oauth2
+	- go get golang.org/x/oauth2
+	- go get golang.org/x/oatuh2/google
+9.	Buat file main.go dengan isi seperti ini:
 ```
 package main
 
@@ -88,7 +86,7 @@ func handleCallback(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Content: %s", content) //Menampilkan data yang didapat
 }
 ```
-11. Test dengan cara
+10. Test dengan cara
 ```
 go run main.go
 ```
